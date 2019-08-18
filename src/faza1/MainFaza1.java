@@ -46,4 +46,55 @@ public class MainFaza1 {
 
 
     }
+
+    public static void openMenu() {
+        int option = 1;
+        Scanner scanner = new Scanner(System.in);
+        while(option!=0) {
+            System.out.println("\n\nDoriti sa:\n" +
+                    "1. Vizionati toate evenimentele\n" +
+                    "2. Cautati evenimente dupa nume\n" +
+                    "3. Cautati evenimente dupa localtie\n" +
+                    "4. Va inscrieti (deveniti client)\n" +
+                    "5. Vizionati istoricul unui client\n" +
+                    "6. Cumparati un bilet\n" +
+                    "7. Adaugati un eveniment\n" +
+                    "8. Adaugati o locatie in aer liber\n" +
+                    "9. Adaugati o locatie sala\n" +
+                    "10. Vizionati toate evenimentele active\n");
+
+            option = scanner.nextInt();
+            if(option == 1) {
+
+            }
+            else if(option == 2) {
+
+            }
+            else if(option == 3) {
+
+            }
+            else if(option == 4) {
+
+            }
+            else if(option == 5) {
+
+            }
+            else if(option == 6) {
+
+            }
+            else if(option == 7) {
+
+            }
+            else if(option == 8) {
+
+            }
+            else if(option == 9) {
+
+            }
+            else if(option == 10) {
+
+            }
+            else option = 0;
+        }
+    }
 }
