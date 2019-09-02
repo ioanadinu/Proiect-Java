@@ -10,6 +10,10 @@ public class MagazinFaza1 implements MagazinService {
     private Magazin magazin = new Magazin();
     private IdGenerator idGenerator = new IdGenerator();
 
+    public Magazin getMagazin() {
+        return magazin;
+    }
+
     @Override
     public List<Eveniment> findAllEvents() {
         return magazin.getEvenimente();
