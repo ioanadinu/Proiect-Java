@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class IdGeneratorRepoJDBC {
-    Connection connection = DatabaseConnection.getInstance().getConnection();
+    private Connection connection = DatabaseConnection.getInstance().getConnection();
 
     public IdGenerator getIdGenerator() {
         IdGenerator idGenerator = new IdGenerator();
