@@ -46,4 +46,14 @@ public class IdGenerator {
     public void setIdLocatie(Integer idLocatie) {
         this.idLocatie = idLocatie + 1;
     }
+
+    @Override
+    public String toString() {
+        return "IdGenerator{" +
+                "idClient=" + idClient +
+                ", idBilet=" + idBilet +
+                ", idEveniment=" + idEveniment +
+                ", idLocatie=" + idLocatie +
+                '}';
+    }
 }
