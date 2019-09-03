@@ -19,10 +19,10 @@ public class IdGeneratorRepoJDBC {
             ResultSet resultSet = statement.executeQuery(sql);
             int b = 0;
             while (resultSet.next()) {
-                idGenerator.setIdBilet(resultSet.getInt("bilet_id"));
-                idGenerator.setIdClient(resultSet.getInt("client_id"));
-                idGenerator.setIdEveniment(resultSet.getInt("eveniment_id"));
-                idGenerator.setIdLocatie(resultSet.getInt("locatie_id"));
+                idGenerator.setIdBilet(resultSet.getInt("bilet_id")-1);
+                idGenerator.setIdClient(resultSet.getInt("client_id")-1);
+                idGenerator.setIdEveniment(resultSet.getInt("eveniment_id")-1);
+                idGenerator.setIdLocatie(resultSet.getInt("locatie_id")-1);
                 b++;
             }
             if(b!=1) throw new RuntimeException("idGenerator has too many rows");
