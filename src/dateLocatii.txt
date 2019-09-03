@@ -1,0 +1,5 @@
+1;adresa1;10;20
+2;adresa2;13;5
+3;adresa3;20
+4;adresa4;25;5
+5;adresa5;50

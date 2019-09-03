@@ -10,7 +10,7 @@ import java.util.List;
 public class RWLocatie {
 
     ReadWrite buffer = new ReadWrite();// daca metoda nu e statica, declar o instanta
-    String fisierLocatii = "dateLocatii.txt";
+    String fisierLocatii = "D:\\Proiect\\src\\dateLocatii.txt";
 
     public ArrayList<Locatie> rLocatie(){
         ArrayList<Locatie> listaLocatii = new ArrayList<>();//!!!!!!!!!!sortedma--treemap

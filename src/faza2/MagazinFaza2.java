@@ -1,9 +1,13 @@
 package faza2;
 
+import faza2.repositoryCSV.RWBilet;
 import faza2.repositoryCSV.RWClient;
+import faza2.repositoryCSV.RWEveniment;
+import faza2.repositoryCSV.RWLocatie;
 import model.*;
 import service.MagazinService;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -11,14 +15,27 @@ public class MagazinFaza2 implements MagazinService {
     private Magazin magazin = new Magazin();
     private IdGenerator idGenerator = new IdGenerator();
     private RWClient rwClient = new RWClient();
+    private RWLocatie rwLocatie = new RWLocatie();
+    private RWEveniment rwEveniment = new RWEveniment();
+    private RWBilet rwBilet = new RWBilet();
+
+    public Magazin getMagazin() {
+        return magazin;
+    }
 
 
     public void open(){
         magazin.setClienti(rwClient.rClient());
+        magazin.setLocatii(rwLocatie.rLocatie());
+        magazin.setEvenimente(rwEveniment.rEveniment());
+        magazin.setBilete(rwBilet.rBilet(magazin));
     }
 
     public void close(){
         rwClient.wClient(magazin.getClienti());
+        rwLocatie.wLocatie(new ArrayList<>(magazin.getLocatii()));
+        rwEveniment.wEveniment(new ArrayList<>(magazin.getEvenimente()));
+        rwBilet.wBilet(new ArrayList<>(magazin.getBilete()));
     }
 
     @Override

@@ -1,0 +1,6 @@
+Ana;emailAna;1;parolaAna
+Bogdan;emailBogdan;4;parolaBogdan
+Mihaela;emailMihaela;3;parolaMihaela
+Razvan;emailRazvan;2;parolaRazvan
+Roxana;emailRoxana;5;parolaRoxana
+Mirela;emailMirela;6;parolaMirela

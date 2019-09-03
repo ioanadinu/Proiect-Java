@@ -4,6 +4,7 @@ import model.*;
 import service.MagazinService;
 
 import java.util.List;
+import java.util.SortedMap;
 import java.util.stream.Collectors;
 
 public class MagazinFaza1 implements MagazinService {
@@ -39,7 +40,11 @@ public class MagazinFaza1 implements MagazinService {
 
     @Override
     public void addClient(Persoana p, String parola) {
-        Client c = new Client(p.getNume(), p.getEmail(),idGenerator.getIdClient() , parola);
+        Integer id = idGenerator.getIdClient();
+        Client c = new Client(p.getNume(), p.getEmail(), id , parola);
+        SortedMap<Integer, Client> clienti = magazin.getClienti();
+        clienti.put(id, c);
+        magazin.setClienti(clienti);
     }
 
     @Override

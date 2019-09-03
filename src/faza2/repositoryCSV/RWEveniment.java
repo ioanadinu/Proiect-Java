@@ -7,7 +7,7 @@ import java.util.List;
 
 public class RWEveniment {
     ReadWrite buffer = new ReadWrite();// daca metoda nu e statica, declar o instanta
-    String fisierEvenimente= "dateEvenimente.txt";
+    String fisierEvenimente= "D:\\Proiect\\src\\dateEvenimente.txt";
 
     public ArrayList<Eveniment> rEveniment(){
         ArrayList<Eveniment> listaEvenimente = new ArrayList<>();

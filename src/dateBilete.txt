@@ -1,0 +1,6 @@
+1;3;picioare
+2;5;picioare
+3;3;scaun
+4;2;scaun
+5;1;picioare
+6;4;scaun

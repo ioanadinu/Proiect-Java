@@ -9,7 +9,7 @@ import java.util.TreeMap;
 
 public class RWClient {
     ReadWrite buffer = new ReadWrite();// daca metoda nu e statica, declar o instanta
-    String fisierClienti = "dateClienti.txt";
+    String fisierClienti = "D:\\Proiect\\src\\dateClienti.txt";
 
 
     public SortedMap<Integer, Client> rClient(){

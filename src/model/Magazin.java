@@ -31,14 +31,17 @@ public class Magazin {
     }
 
     public void setLocatii(List<Locatie> locatii) {
+
         this.locatii = locatii;
     }
 
     public List<Bilet> getBilete() {
+
         return bilete;
     }
 
     public void setBilete(List<Bilet> bilete) {
+
         this.bilete = bilete;
     }
 }

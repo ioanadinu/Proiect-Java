@@ -9,7 +9,7 @@ import java.util.List;
 
 public class RWBilet {
     ReadWrite buffer = new ReadWrite();// daca metoda nu e statica, declar o instanta
-    String fisierBilete = "dateBilete.txt";
+    String fisierBilete = "D:\\Proiect\\src\\dateBilete.txt";
 
 
     public ArrayList<Bilet> rBilet(Magazin magazin){
@@ -30,7 +30,7 @@ public class RWBilet {
         return listaBilete;
     }
 
-    public void wClient(ArrayList<Bilet> listaBilete){
+    public void wBilet(ArrayList<Bilet> listaBilete){
         List<List<String>> matrice = new ArrayList<>();
         for(Bilet i : listaBilete){
             List<String> linie = new ArrayList<>();
